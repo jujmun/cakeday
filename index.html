@@ -84,15 +84,6 @@
     width: 8px; height: 8px; border-radius: 50%;
     background: var(--amber); display: inline-block;
   }
-  .nav-links {
-    display: flex; align-items: center; gap: 28px;
-    list-style: none;
-  }
-  .nav-links a {
-    color: var(--ink-60); text-decoration: none; font-size: 14px; font-weight: 500;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--ink); }
   .btn {
     display: inline-flex; align-items: center; gap: 6px;
     padding: 9px 20px; border-radius: var(--radius-md);
@@ -167,25 +158,6 @@
     font-size: 17px; color: var(--ink-60); line-height: 1.65;
     margin-bottom: 36px; max-width: 440px;
   }
-  .hero-trust {
-    display: flex; align-items: center; gap: 8px;
-    font-size: 13px; color: var(--ink-60);
-  }
-  .hero-trust-avatars {
-    display: flex;
-  }
-  .trust-avatar {
-    width: 28px; height: 28px; border-radius: 50%;
-    border: 2px solid var(--cream);
-    background: var(--amber-mid);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 10px; font-weight: 600; color: white;
-    margin-left: -6px;
-  }
-  .trust-avatar:first-child { margin-left: 0; }
-  .trust-avatar.t2 { background: var(--teal); }
-  .trust-avatar.t3 { background: #9B6DB5; }
-  .trust-avatar.t4 { background: #D55A5A; }
 
   .hero-visual-col {
     display: flex;
@@ -479,12 +451,6 @@
   }
   .final-cta h2 em { color: var(--amber-mid); font-style: italic; font-family: 'Kalam', cursive; }
   .final-cta p { color: rgba(255,255,255,0.6); font-size: 16px; margin-bottom: 36px; }
-  .final-cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  .btn-white {
-    background: white; color: var(--ink);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  .btn-white:hover { background: var(--cream); transform: translateY(-1px); }
   .btn-ghost {
     background: transparent; color: rgba(255,255,255,0.75);
     border: 1px solid rgba(255,255,255,0.2);
@@ -549,7 +515,6 @@
     .two-col.flip > :last-child { order: 2; }
     .onboarding-grid { grid-template-columns: 1fr; }
     .demo-stat-row { grid-template-columns: repeat(2, 1fr); }
-    .nav-links { display: none; }
     .hero { padding: 60px 5vw 60px; }
     section { padding: 60px 5vw; }
     .demo-tabs { overflow-x: auto; }
@@ -598,11 +563,6 @@
       <span class="logo-dot"></span>
       Cakeday
     </a>
-    <ul class="nav-links">
-      <li><a href="#how-it-works">How it works</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
   </div>
 </nav>
 
@@ -623,15 +583,6 @@
       <p class="hero-sub">
         Cakeday handles your team's birthdays, anniversaries, and welcome moments — local cakes delivered, zero effort from HR.
       </p>
-      <div class="hero-trust">
-        <div class="hero-trust-avatars">
-          <div class="trust-avatar">SN</div>
-          <div class="trust-avatar t2">KL</div>
-          <div class="trust-avatar t3">PR</div>
-          <div class="trust-avatar t4">WX</div>
-        </div>
-        <span>Trusted by Singapore SMEs across tech, finance, and professional services</span>
-      </div>
     </div>
 
     <!-- Hero cake gallery -->
@@ -656,12 +607,12 @@
   <div class="container">
     <div class="section-label">How it works</div>
     <h2 class="section-h2">Set up once.<br><em>Celebrate every time.</em></h2>
-    <p class="section-lead">Cakeday integrates with your HRIS or accepts a simple CSV upload. From there, we handle the rest — automatically, for every employee, every event.</p>
+    <p class="section-lead">Cakeday accepts a simple CSV upload. From there, we handle the rest — automatically, for every employee, every event.</p>
     <div class="how-grid">
       <div class="how-card">
         <div class="how-num">1</div>
         <h3>Connect your team</h3>
-        <p>Sync employees from BambooHR, HiBob, or Workday — or upload a simple CSV with names, birthdays, and work dates.</p>
+        <p>Upload a simple CSV with names, birthdays, and work dates.</p>
       </div>
       <div class="how-card">
         <div class="how-num">2</div>
@@ -676,7 +627,7 @@
       <div class="how-card">
         <div class="how-num">4</div>
         <h3>Employee gets delighted</h3>
-        <p>A cake or gift arrives at their door with a team message. You get notified. Finance gets a clean receipt. Done.</p>
+        <p>A cake arrives at your office with a team message. You get notified. Finance gets a clean receipt. Done.</p>
       </div>
     </div>
   </div>
@@ -692,7 +643,7 @@
       <div class="feature-card">
         <div class="feature-icon"><svg class="icon-svg" aria-hidden="true"><use href="#i-calendar"></use></svg></div>
         <h3>Automated event scheduling</h3>
-        <p>Birthdays and anniversaries are scheduled automatically from your HRIS data. No spreadsheet needed.</p>
+        <p>Birthdays and anniversaries are scheduled automatically</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg class="icon-svg" aria-hidden="true"><use href="#i-cake"></use></svg></div>
@@ -713,7 +664,7 @@
   <div class="container">
     <div class="section-label">Made for Singapore</div>
     <h2 class="section-h2" style="color:white">Local flavours.<br>Local vendors.<br><em style="color:var(--amber-mid)">Genuine care.</em></h2>
-    <p class="sg-lead">We're not a generic gifting API bolted onto a global platform. Every vendor, every flavour, and every delivery window is designed for Singapore's culture, dietary diversity, and real-world logistics.</p>
+    <p class="sg-lead">Every vendor, every flavour, and every delivery window is designed for Singapore's culture, dietary diversity, and real-world logistics.</p>
     <div class="sg-flavors-grid">
       <div class="sg-flavor-card"><svg class="icon-svg sg-flavor-icon" aria-hidden="true"><use href="#i-leaf"></use></svg><span class="sg-flavor-label">Pandan</span></div>
       <div class="sg-flavor-card"><svg class="icon-svg sg-flavor-icon" aria-hidden="true"><use href="#i-jar"></use></svg><span class="sg-flavor-label">Ondeh-ondeh</span></div>
@@ -769,13 +720,6 @@
         </button>
         <div class="faq-a">We handle everything. Address collection happens discreetly via a short form sent to the recipient — they don't know what's coming, just that something is. Same-day and next-day delivery is available with most vendors. We use islandwide couriers and coordinate timing with vendors.</div>
       </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          How does the pilot work, and is there any commitment?
-          <span class="faq-q-icon">+</span>
-        </button>
-        <div class="faq-a">The pilot is 4 weeks, covering up to 3 real celebrations with actual vendors and real deliveries. There's no platform subscription fee during the pilot — you only pay the actual cost of the cakes and delivery. At the end, you decide if you want to continue. No pressure, no auto-renewal.</div>
-      </div>
     </div>
   </div>
 </section>
@@ -784,10 +728,6 @@
 <section class="final-cta">
   <div class="container">
     <h2>Your team's next birthday<br>is already <em>taken care of.</em></h2>
-    <p>Set up in under 20 minutes. First celebration on us. Zero spreadsheets involved.</p>
-    <div class="final-cta-actions">
-      <a href="mailto:hello@cakeday.sg" class="btn btn-white btn-xl">Contact us</a>
-    </div>
   </div>
 </section>
 
@@ -798,7 +738,6 @@
     <div class="footer-links">
       <a href="#how-it-works">How it works</a>
       <a href="#faq">FAQ</a>
-      <a href="mailto:hello@cakeday.sg">hello@cakeday.sg</a>
     </div>
   </div>
 </footer>
