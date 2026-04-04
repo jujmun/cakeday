@@ -170,25 +170,26 @@
     border-radius: var(--radius-xl);
     border: 1px solid var(--ink-10);
     box-shadow: var(--shadow-lg);
-    padding: 22px;
+    padding: 18px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
+    gap: 12px;
     align-items: end;
   }
   .hero-cake-item {
     background: linear-gradient(180deg, #fff 0%, var(--cream) 100%);
     border: 1px solid var(--ink-10);
     border-radius: var(--radius-lg);
-    padding: 10px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 170px;
+    min-height: 120px;
   }
   .hero-cake-item img {
     width: 100%;
-    max-width: 180px;
+    max-width: 140px;
+    max-height: 120px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 10px 16px rgba(26,22,18,0.12));
@@ -518,8 +519,9 @@
     .hero { padding: 60px 5vw 60px; }
     section { padding: 60px 5vw; }
     .demo-tabs { overflow-x: auto; }
-    .hero-cake-gallery { grid-template-columns: 1fr; }
-    .hero-cake-item { min-height: 150px; }
+    .hero-cake-gallery { padding: 10px; gap: 8px; }
+    .hero-cake-item { min-height: 76px; padding: 4px; }
+    .hero-cake-item img { max-width: 100%; max-height: 68px; }
   }
 </style>
 </head>
@@ -596,6 +598,24 @@
         </div>
         <div class="hero-cake-item">
           <img src="images/cake-matcha.png" width="400" height="400" alt="Matcha cake topped with strawberries">
+        </div>
+        <div class="hero-cake-item">
+          <img src="images/cake-board-1.png" width="400" height="400" alt="Lime green cake with coconut sides and macaron">
+        </div>
+        <div class="hero-cake-item">
+          <img src="images/cake-board-2.png" width="400" height="400" alt="Mango mousse cake with glossy glaze and fruit">
+        </div>
+        <div class="hero-cake-item">
+          <img src="images/cake-board-3.png" width="400" height="400" alt="Hazelnut layer cake with nuts and caramel accents">
+        </div>
+        <div class="hero-cake-item">
+          <img src="images/cake-board-4.png" width="400" height="400" alt="Pastel layered cake with peach cream and chocolate garnish">
+        </div>
+        <div class="hero-cake-item">
+          <img src="images/cake-board-5.png" width="400" height="400" alt="Pistachio mousse cake with cream dollops and chocolate">
+        </div>
+        <div class="hero-cake-item">
+          <img src="images/cake-board-6.png" width="400" height="400" alt="Lemon meringue tart with toasted spiral meringue">
         </div>
       </div>
     </div>
